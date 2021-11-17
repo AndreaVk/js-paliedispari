@@ -11,24 +11,45 @@
 
 //Palindromo
 
-function isPalindroma(parola) {
-    let newWorld = "";
-    let palindroma = false;
-    for (i = parola.length - 1; i >= 0; i--) {
-    newWorld += parola[i];
-    }
-    if (newWorld == parola) {
-    palindroma = true;
-    }
-    return palindroma;
-}
+//function isPalindroma(parola) {
+ //   let newWorld = "";
+   // let palindroma = false;
+   // for (i = parola.length - 1; i >= 0; i--) {
+   // newWorld += parola[i];
+   // }
+    //if (newWorld == parola) {
+    //palindroma = true;
+    //}
+    //return palindroma;
+//}
 
-let world = prompt("Inserisci una parola");
-if (isPalindroma(world)) {
-    console.log(world + " è palindroma");
-} else {
-    console.log(world + " non è palindroma");
-}
+//let world = prompt("Inserisci una parola");
+//if (isPalindroma(world)) {
+  //  console.log(world + " è palindroma");
+//} else {
+  //  console.log(world + " non è palindroma");
+//}
+
+//Pari e Dispari
+
+const sceltaUser = prompt("Pari o dispari?");
+console.log(sceltaUser);
+    if (sceltaUser != "pari" && "dispari") {
+        alert("Devi scegliere pari o dispari!")
+    }
+console.log("l'utente ha scelto: " + sceltaUser);
+    if (sceltaUser == "pari") {
+        console.log("Il pc ha scelto: dispari");
+    } else if (sceltaUser == "dispari") {
+        console.log("Il pc ha scelto: pari");
+    }
+
+
+const numeroUser = parseInt(prompt("Inserisci un numero da 1 a 5"));
+console.log(numeroUser);
+    if (numeroUser > 5) {
+        alert("Devi scegliere un numero da 1 a 5!")
+    }
 
 
 
